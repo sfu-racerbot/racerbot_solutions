@@ -13,6 +13,7 @@ cd /racerbot_ws/src
 git clone https://github.com/sfu-racerbot/racerbot_solutions.git
 ```
 4. Build and run the packages as normal.
+5. If you get a CMake error saying a source directory does not exist, try restarting your Docker container (`docker stop racerbot` then `docker start -ai racerbot`).
 
 ## Selective Building
 Build times can get long, so it is recommended to build packages selectively.
