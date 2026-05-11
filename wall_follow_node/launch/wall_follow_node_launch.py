@@ -1,0 +1,14 @@
+from launch import LaunchDescription
+from launch_ros.actions import Node
+
+
+def generate_launch_description():
+    return LaunchDescription([
+        # Launch wall_follow_node
+        Node(
+            package='wall_follow_node',
+            executable='wall_follow_node',
+            name='wall_follow_node',
+            output='screen',
+        ),
+    ])
